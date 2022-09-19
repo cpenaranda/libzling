@@ -13,7 +13,7 @@ file(COPY "../src/msinttypes"       DESTINATION "./include/libzling")
 
 include_directories("./include")
 
-add_library(zling SHARED  ${DIR_SRC})
+add_library(zling STATIC  ${DIR_SRC})
 add_executable(zling_demo ${DIR_DEMO})
 
 target_link_libraries(zling_demo zling)
